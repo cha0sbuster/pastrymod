@@ -1,13 +1,13 @@
 from time import sleep
 races = []
-class race:
+class Race:
     def __init__(self,name,ears,skinType,skinColour):
         self.name=name
         self.ears=ears
         self.skinType=skinType
         self.skinColour=skinColour
 
-class actor:
+class Actor:
     def __init__(self,name,height,weight,race,stomachCap,stomachVolume,skinColour):
         self.name=name
         self.race=race
@@ -37,8 +37,8 @@ def actortest():
     print("RUNNING ACTORTEST")
     for i in races:
         print(i.name)
-    gote = race("Goat","caprine","fur","white")
-    plr = actor("Asriel",72,300,gote,100,0,"white")
+    gote = Race("Goat","caprine","fur","white")
+    plr = Actor("Asriel",72,300,gote,100,0,"white")
     print(plr.look())
 
     for i in range(1,10):

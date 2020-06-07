@@ -1,17 +1,23 @@
-from actor import *
+#imports lul
+from pastrymod import *
 import json
 import os
 
+#initialize race list, move into the races folder and print the files for debug
 races=[]
-os.chdir("DATA\\Races")
-print(os.listdir())
-
+try:
+    os.chdir("DATA\\Races")
+    print(os.listdir())
+except FileNotFoundError:
+    # pastrymod.setup() //run the directory setup script that i am going to make at some point i'm sure
+    os.mkdir("DATA\\Races") #makes the Races folder if it got deleted somehow
 for i in os.listdir():
     racefile = open(i)
     current = json.loads(racefile.read())
     print(current)
-    race = race(current["name"],current["ears"],current["skinType"],current["skinColour"])
+    race = Race(current["name"],current["ears"],current["skinType"],current["skinColour"])
     races.append(race)
+    racefile.close
 
 #human = race("human","human","skin","white")
 #goat = race("goat","caprine","fur","white")
