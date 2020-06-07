@@ -1,5 +1,10 @@
 from time import sleep
+
+# make lists wheeee
 races = []
+actors = []
+places = []
+
 class Race:
     def __init__(self,name,ears,skinType,skinColour):
         self.name=name

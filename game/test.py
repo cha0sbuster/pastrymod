@@ -19,10 +19,6 @@ for i in os.listdir():
     races.append(race)
     racefile.close
 
-#human = race("human","human","skin","white")
-#goat = race("goat","caprine","fur","white")
-#races = [human,goat]
-
 def test():
     #print("RUNNING ACTORTEST")
     #goat = race("Goat","caprine","fur","white")
