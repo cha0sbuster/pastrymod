@@ -10,7 +10,7 @@ try:
     print(os.listdir())
 except FileNotFoundError:
     # pastrymod.setup() //run the directory setup script that i am going to make at some point i'm sure
-    os.mkdir("DATA\\Races") #makes the Races folder if it got deleted somehow
+    os.mkdir("DATA\\Races") # makes the Races folder if it got deleted somehow
 for i in os.listdir():
     racefile = open(i)
     current = json.loads(racefile.read())
