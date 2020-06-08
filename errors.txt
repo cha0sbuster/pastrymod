@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-The label start is defined twice, at
-  File "game/script.rpyc", line 13 and
-  File "game/startPy.rpy", line 12.
+File "game/startPy.rpy", line 17: invalid syntax
+        races[current["name"]] = current["name"].name : current["name"]
+                                                       ^
+    
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sun Jun 07 21:00:12 2020
+Mon Jun 08 11:47:32 2020

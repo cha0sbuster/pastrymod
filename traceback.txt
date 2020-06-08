@@ -1,26 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/startPy.rpy", line 28, in script
-    $ mc = Actor("Asriel",60,150,human,100,0,"white")
-  File "game/startPy.rpy", line 28, in <module>
-    $ mc = Actor("Asriel",60,150,human,100,0,"white")
-NameError: name 'human' is not defined
+  File "game/startPy.rpy", line 1, in script
+    ﻿init 0 python:
+  File "game/startPy.rpy", line 23, in <module>
+    racelist.append((e['name'],races[e]))
+TypeError: string indices must be integers
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/startPy.rpy", line 28, in script
-    $ mc = Actor("Asriel",60,150,human,100,0,"white")
+  File "game/startPy.rpy", line 1, in script
+    ﻿init 0 python:
   File "F:\renpy\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "F:\renpy\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
     exec bytecode in globals, locals
-  File "game/startPy.rpy", line 28, in <module>
-    $ mc = Actor("Asriel",60,150,human,100,0,"white")
-NameError: name 'human' is not defined
+  File "game/startPy.rpy", line 23, in <module>
+    racelist.append((e['name'],races[e]))
+TypeError: string indices must be integers
 
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
 pastrymod2 1.0
-Sun Jun 07 21:16:22 2020
+Mon Jun 08 11:50:57 2020

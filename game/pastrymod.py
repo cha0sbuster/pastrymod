@@ -10,14 +10,14 @@ class Race:
         self.skinColour=skinColour
 
 class Actor:
-    def __init__(self,name,height,weight,race,stomachCap,stomachVolume,skinColour):
+    def __init__(self,name,height,weight,Race,stomachCap,stomachVolume,skinColour):
         self.name=name
-        self.race=race
-        self.height=height
-        self.weight=weight
+        self.race=Race
+        self.height=0
+        self.weight=0
         self.stomachCap=0.0
         self.stomachVolume=0.0
-        self.skinColour=race.skinColour
+        self.skinColour=Race.skinColour
     def fill(self,amount,weightMod):
         self.stomachVolume=self.stomachVolume+amount
         self.weight=self.weight+weightMod
@@ -33,11 +33,11 @@ class Actor:
             #if it can't find "plr" that means the player instance hasn't been made! we're probably in a test
             self.persp="Your"
         return self.persp+" name is "+self.name+". You are a "+self.race.name+". You are "+str(self.height)+" inches tall and weigh "+str(self.weight)+" pounds."
-'''
+
 def actortest():
     print("RUNNING ACTORTEST")
-    for i in races:
-        print(i.name)
+    #for i in Races:
+        #print(i.name)
     gote = Race("Goat","caprine","fur","white")
     plr = Actor("Asriel",72,300,gote,100,0,"white")
     print(plr.look())
@@ -46,4 +46,5 @@ def actortest():
         print(plr.fill(10,-5))
         sleep(0.05)
     print("ACTORTEST DONE")
-'''
+
+actortest()
