@@ -19,8 +19,8 @@
     #make a list that we can display in ren'py because it ONLY TAKES A LIST OF TUPLES
     #FOR SOME REASON
     racelist=[]
-    for e in races:
-       racelist.append((e['name'],races[e]))
+    #for e in races:
+    #   racelist.append((e['name'],races[e]))
     print(races)
 define plr = Character("MC")
 
