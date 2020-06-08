@@ -1,1 +1,9 @@
 pastrymod.code-workspace
+.vscode/launch.json
+.vscode/settings.json
+game/saves/_reload-2-LT1.save
+game/saves/navigation.json
+game/saves/persistent
+game/cache/bytecode.rpyb
+game/cache/screens.rpyb
+game/tl/None/common.rpymc

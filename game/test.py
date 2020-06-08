@@ -1,5 +1,5 @@
 #imports lul
-from pastrymod import *
+import pastrymod
 import json
 import os
 
@@ -10,7 +10,8 @@ try:
     print(os.listdir())
 except FileNotFoundError:
     # pastrymod.setup() //run the directory setup script that i am going to make at some point i'm sure
-    os.mkdir("DATA\\Races") # makes the Races folder if it got deleted somehow
+    pass
+
 for i in os.listdir():
     racefile = open(i)
     current = json.loads(racefile.read())

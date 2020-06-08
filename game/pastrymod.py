@@ -1,9 +1,6 @@
 from time import sleep
 
 # make lists wheeee
-races = []
-actors = []
-places = []
 
 class Race:
     def __init__(self,name,ears,skinType,skinColour):
@@ -21,7 +18,6 @@ class Actor:
         self.stomachCap=0.0
         self.stomachVolume=0.0
         self.skinColour=race.skinColour
-    
     def fill(self,amount,weightMod):
         self.stomachVolume=self.stomachVolume+amount
         self.weight=self.weight+weightMod
@@ -37,7 +33,7 @@ class Actor:
             #if it can't find "plr" that means the player instance hasn't been made! we're probably in a test
             self.persp="Your"
         return self.persp+" name is "+self.name+". You are a "+self.race.name+". You are "+str(self.height)+" inches tall and weigh "+str(self.weight)+" pounds."
-
+'''
 def actortest():
     print("RUNNING ACTORTEST")
     for i in races:
@@ -50,3 +46,4 @@ def actortest():
         print(plr.fill(10,-5))
         sleep(0.05)
     print("ACTORTEST DONE")
+'''
