@@ -1,4 +1,4 @@
-# pastrymod
+# PastryMod
 Library/template project for life sim games in Ren'Py.
 Pastrymod is a half-library, half-template for simulator authors, focused on dealing with most of the heavy code lifting for creating extensible, maintainable, powerful simulations.
 
