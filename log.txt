@@ -1,53 +1,22 @@
-Mon Jun 08 11:53:07 2020
+Thu Jun 11 15:22:24 2020
 Windows-8-6.2.9200
 Ren'Py 7.3.5.606
  
 
-Bootstrap to the start of init.init took 0.06s
+Bootstrap to the start of init.init took 0.07s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
 Loading script took 0.11s
 Loading save slot metadata. took 0.01s
 Loading persistent took 0.00s
-Importing _renpysteam: ImportError('No module named _renpysteam',)
-RUNNING ACTORTEST
-Your name is Asriel. You are a Goat. You are 0 inches tall and weigh 0 pounds.
-Stomach Volume: 10.0 Weight: -5
-Stomach Volume: 20.0 Weight: -10
-Stomach Volume: 30.0 Weight: -15
-Stomach Volume: 40.0 Weight: -20
-Stomach Volume: 50.0 Weight: -25
-Stomach Volume: 60.0 Weight: -30
-Stomach Volume: 70.0 Weight: -35
-Stomach Volume: 80.0 Weight: -40
-Stomach Volume: 90.0 Weight: -45
-ACTORTEST DONE
-.
-{u'Goat': <Pastrymod.Race instance at 0x04621198>, u'Human': <Pastrymod.Race instance at 0x046211C0>}
-Running init code took 0.53s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\black\\AppData\\Roaming/RenPy/backups\\pastrymod':
-Dump and make backups. took 0.00s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.01s
+
+File "game/startPy.rpy", line 32: invalid syntax
+    MC("Your name is "+mc.name+", and you are a "+mc.race+"with "+mc.skinColour+" "+mc.skinType".")
+                                                                                                  ^
+    
 DPI scale factor: 1.000000
-Creating interface object took 0.27s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.01s
-Load screen analysis took 0.02s
-Analyze screens took 0.04s
-Save screen analysis took 0.18s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.07s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.02s
+Interface start took 0.32s
 
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
@@ -474,21 +443,4 @@ Texture testing:
 - 2048px textures work.
 Root FBO is: 0
 FBO Maximum Texture Size: 2048
-Total time until interface ready: 3.01900005341s
-- Target is 5 frames in 0.333333333333 seconds.
-- Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.009944 seconds.
-- Frame drawn at 0.009944 seconds.
-- Frame drawn at 0.010944 seconds.
-- Frame drawn at 0.013944 seconds.
-- 0.013944 seconds to render 5 frames.
-<Pastrymod.Race instance at 0x046211C0>
-Traceback (most recent call last):
-  File "renpy/common/00console.rpy", line 452, in run
-    result = renpy.python.py_eval(code)
-  File "F:\renpy\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "F:\renpy\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-AttributeError: Race instance has no attribute 'values'
+Total time until interface ready: 1.56500005722s
